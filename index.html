@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="es">
+  <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1086480953988091');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1086480953988091&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Antojitos — Parrilla en La Joya, Arequipa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;700;900&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-inner">
+    <a href="#inicio" class="logo">Antojitos<span class="logo-dot">.</span></a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#inicio">Inicio</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#carta">Carta</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="btn btn-ghost" id="openLogin">Ingresar</button>
+      <a href="#delivery" class="btn btn-ember">Pedir delivery</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="inicio">
+  <div class="hero-media">
+    <!-- Reemplaza esta URL por: img/hero.jpg -->
+    <img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=1800&q=80" alt="Carnes a la parrilla sobre brasas encendidas" class="hero-bg">
+    <div class="hero-overlay"></div>
+  </div>
+
+  <div class="wrap hero-content">
+    <p class="hero-kicker">La Joya · Arequipa</p>
+    <h1>ANTOJITOS</h1>
+    <p class="hero-tagline">El sabor de la parrilla que nos reúne</p>
+    <p class="hero-location">📍 Cruce La Joya – Panamericana Sur, ex Grifo Gato, La Joya, Arequipa</p>
+    <div class="hero-cta">
+      <a href="#carta" class="btn btn-ember btn-lg">Ver nuestra carta</a>
+      <a href="#contacto" class="btn btn-outline btn-lg">Contáctanos</a>
+    </div>
+  </div>
+
+  <a href="#carrusel" class="scroll-hint" aria-label="Bajar a la siguiente sección">↓</a>
+</section>
+
+<!-- ===== CARRUSEL AUTOMÁTICO ===== -->
+<section class="carrusel-section" id="carrusel">
+  <div class="carousel-track" id="autoCarousel">
+
+    <div class="slide is-active">
+      <!-- Reemplaza esta URL por: img/carrusel-1.jpg -->
+      <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1600&q=80" alt="Parrillada mixta con carnes variadas">
+      <div class="slide-caption">
+        <span>Parrillada Antojitos</span>
+      </div>
+    </div>
+
+    <div class="slide">
+      <!-- Reemplaza esta URL por: img/carrusel-2.jpg -->
+      <img src="https://images.unsplash.com/photo-1607330289024-1535c6b4e1c1?auto=format&fit=crop&w=1600&q=80" alt="Anticuchos a la parrilla">
+      <div class="slide-caption">
+        <span>Anticuchos al carbón</span>
+      </div>
+    </div>
+
+    <div class="slide">
+      <!-- Reemplaza esta URL por: img/carrusel-3.jpg -->
+      <img src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=1600&q=80" alt="Pollo a la brasa dorado">
+      <div class="slide-caption">
+        <span>Salchipapas</span>
+      </div>
+    </div>
+
+    <div class="slide">
+      <!-- Reemplaza esta URL por: img/carrusel-4.jpg -->
+      <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1600&q=80" alt="Hamburguesa artesanal">
+      <div class="slide-caption">
+        <span>Hamburguesas de la casa</span>
+      </div>
+    </div>
+
+    <div class="slide">
+      <!-- Reemplaza esta URL por: img/carrusel-5.jpg -->
+      <img src="https://images.unsplash.com/photo-1432139555190-58524dae6a55?auto=format&fit=crop&w=1600&q=80" alt="Costillar de cerdo BBQ">
+      <div class="slide-caption">
+        <span>Alitas BBQ</span>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="carousel-arrow prev" id="autoPrev" aria-label="Imagen anterior">←</button>
+  <button class="carousel-arrow next" id="autoNext" aria-label="Imagen siguiente">→</button>
+
+  <div class="carousel-dots" id="autoDots"></div>
+</section>
+
+<!-- ===== SOBRE NOSOTROS ===== -->
+<section class="nosotros" id="nosotros">
+  <div class="wrap nosotros-inner">
+    <div class="nosotros-media">
+      <!-- Reemplaza esta URL por: img/nosotros.jpg -->
+      <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=80" alt="Ambiente del restaurante Antojitos">
+    </div>
+    <div class="nosotros-text">
+      <p class="section-kicker">Sobre nosotros</p>
+      <h2>Antojitos</h2>
+      <p>En Antojitos disfrutamos compartir el sabor de una buena parrilla. Creamos un espacio donde el buen sabor, la atención y los momentos compartidos se encuentran en un mismo lugar.</p>
+      <p>Nos encontramos en el Cruce La Joya – Panamericana Sur, en el ex Grifo Gato, La Joya, Arequipa, un punto de paso donde nos gusta recibir a quienes buscan una buena parrilla.</p>
+      <!-- AGREGAR AQUÍ: historia, años de funcionamiento o datos adicionales del restaurante -->
+    </div>
+  </div>
+</section>
+
+<!-- ===== CARTA ===== -->
+<section class="carta" id="carta">
+  <div class="wrap">
+    <div class="section-head center">
+      <p class="section-kicker">Carta</p>
+      <h2>Lo que sale de nuestra parrilla</h2>
+      <p class="section-sub">Precios en soles.</p>
+    </div>
+
+    <div class="menu-tabs" id="menuTabs">
+      <button class="tab-btn is-active" data-cat="parrillas-clasicas">Parrillas clásicas</button>
+      <button class="tab-btn" data-cat="combos-dobles">Combos dobles</button>
+      <button class="tab-btn" data-cat="combos-triples">Combos triples</button>
+      <button class="tab-btn" data-cat="antojitos-especiales">Antojitos especiales</button>
+      <button class="tab-btn" data-cat="combos-antojitos">Combos Antojitos</button>
+      <button class="tab-btn" data-cat="alitas">Alitas</button>
+      <button class="tab-btn" data-cat="salchipapas">Salchipapas</button>
+      <button class="tab-btn" data-cat="hamburguesas">Hamburguesas</button>
+      <button class="tab-btn" data-cat="guarniciones">Guarniciones</button>
+      <button class="tab-btn" data-cat="jarras">Bebidas — Jarras</button>
+      <button class="tab-btn" data-cat="gaseosas">Gaseosas</button>
+      <button class="tab-btn" data-cat="calientes">Bebidas calientes</button>
+      <button class="tab-btn" data-cat="tragos">Tragos &amp; Cócteles</button>
+      <button class="tab-btn" data-cat="cervezas">Cervezas</button>
+      <button class="tab-btn" data-cat="especiales">Especiales</button>
+      <button class="tab-btn" data-cat="vinos">Vinos</button>
+    </div>
+
+    <div class="menu-panels">
+
+      <div class="menu-grid is-active" data-panel="parrillas-clasicas">
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=500&q=80" alt="Filete de Pollo"><div class="menu-card-body"><h3>Filete de Pollo</h3><p>Papa + Chorizo + Ensalada + Choclo</p><span class="price">S/ 22.00</span></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1432139555190-58524dae6a55?auto=format&fit=crop&w=500&q=80" alt="Chuleta de Cerdo"><div class="menu-card-body"><h3>Chuleta de Cerdo</h3><p>Papa + Chorizo + Ensalada + Choclo</p><span class="price">S/ 22.00</span></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=500&q=80" alt="Chuleta de Res"><div class="menu-card-body"><h3>Chuleta de Res</h3><p>Papa + Chorizo + Ensalada + Choclo</p><span class="price">S/ 23.00</span></div></article>
+      </div>
+
+      <div class="menu-grid" data-panel="combos-dobles">
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=500&q=80" alt="Cerdo + Res"><div class="menu-card-body"><h3>Cerdo + Res</h3><p>Papa + Chorizo + Ensalada + Choclo</p><span class="price">S/ 36.00</span></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1432139555190-58524dae6a55?auto=format&fit=crop&w=500&q=80" alt="Cerdo + Pollo"><div class="menu-card-body"><h3>Cerdo + Pollo</h3><p>Papa + Chorizo + Ensalada + Choclo</p><span class="price">S/ 35.00</span></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=500&q=80" alt="Res + Pollo"><div class="menu-card-body"><h3>Res + Pollo</h3><p>Papa + Chorizo + Ensalada + Choclo</p><span class="price">S/ 35.00</span></div></article>
+      </div>
+
+      <div class="menu-grid" data-panel="combos-triples">
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=500&q=80" alt="Cerdo + Res + Pollo"><div class="menu-card-body"><h3>Cerdo + Res + Pollo</h3><p>Papa + Chorizo + Ensalada + Choclo</p><span class="price">S/ 52.00</span></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=500&q=80" alt="Cerdo + Res + Pollo + Caparinas"><div class="menu-card-body"><h3>Cerdo + Res + Pollo + Caparinas</h3><p>Papa + Chorizo + Ensalada + Choclo</p><span class="price">S/ 62.00</span></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=500&q=80" alt="Chancho + Res + Pollo + Caparina + Anticucho"><div class="menu-card-body"><h3>Chancho + Res + Pollo + Caparina + Anticucho</h3><p>Sin descripción indicada en la carta real.</p><span class="price">S/ 72.00</span></div></article>
+      </div>
+
+      <div class="menu-grid" data-panel="antojitos-especiales">
+        <article class="menu-card"><img src="./img/anticuchos.jpg" alt="Anticuchos de Corazón de Res"><div class="menu-card-body"><h3>Anticuchos de Corazón de Res</h3><p>Papa + Ensalada + Choclo</p><span class="price">S/ 16.00</span></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=500&q=80" alt="Mollejitas de Pollo"><div class="menu-card-body"><h3>Mollejitas de Pollo</h3><p>Papa + Ensalada</p><span class="price">S/ 18.00</span></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=500&q=80" alt="Caparinas"><div class="menu-card-body"><h3>Caparinas</h3><p>Papa + Ensalada</p><span class="price">S/ 15.00</span></div></article>
+      </div>
+
+      <div class="menu-grid" data-panel="combos-antojitos">
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=500&q=80" alt="Parrilla + Caparina"><div class="menu-card-body"><h3>Parrilla + Caparina</h3><p>Papa + Chorizo + Ensalada + Choclo</p><span class="price">S/ 31.00</span></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=500&q=80" alt="Parrilla + Mollejita"><div class="menu-card-body"><h3>Parrilla + Mollejita</h3><p>Papa + Chorizo + Ensalada + Choclo</p><span class="price">S/ 33.00</span></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=500&q=80" alt="Parrilla + Caparina + Anticucho"><div class="menu-card-body"><h3>Parrilla + Caparina + Anticucho</h3><p>Papa + Chorizo + Ensalada + Choclo</p><span class="price">S/ 36.00</span></div></article>
+        <article class="menu-card"><img src="../files/img/anticuchos.jpg" alt="Anticucho + Caparina"><div class="menu-card-body"><h3>Anticucho + Caparina</h3><p>Papa + Ensalada + Choclo</p><span class="price">S/ 25.00</span></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=500&q=80" alt="Mollejita + Anticucho"><div class="menu-card-body"><h3>Mollejita + Anticucho</h3><p>Papa + Ensalada + Choclo</p><span class="price">S/ 25.00</span></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=500&q=80" alt="Caparina + Mollejita"><div class="menu-card-body"><h3>Caparina + Mollejita</h3><p>Papa + Ensalada + Choclo</p><span class="price">S/ 23.00</span></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=500&q=80" alt="Parrilla + Anticucho"><div class="menu-card-body"><h3>Parrilla + Anticucho</h3><p>Papa + Ensalada + Choclo + Chorizo</p><span class="price">S/ 33.00</span></div></article>
+        <article class="menu-card"><img src="../files/img/anticuchos.jpg" alt="Caparinas + Mollejitas + Anticucho"><div class="menu-card-body"><h3>Caparinas + Mollejitas + Anticucho</h3><p>Papa + Ensalada + Choclo</p><span class="price">S/ 30.00</span></div></article>
+      </div>
+
+      <div class="menu-grid" data-panel="alitas">
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1527477396000-e27163b481c2?auto=format&fit=crop&w=500&q=80" alt="Alitas a la Parrilla"><div class="menu-card-body"><h3>Alitas a la Parrilla</h3><p>Papas + Choclo + Chorizo + Ensalada</p><span class="price">S/ 26.00</span></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1527477396000-e27163b481c2?auto=format&fit=crop&w=500&q=80" alt="Alitas a la BBQ"><div class="menu-card-body"><h3>Alitas a la BBQ</h3><p>Papas Fritas Nativas</p><span class="price">S/ 22.00</span></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1527477396000-e27163b481c2?auto=format&fit=crop&w=500&q=80" alt="Alitas a la BBQ Picantes"><div class="menu-card-body"><h3>Alitas a la BBQ Picantes</h3><p>Papas Fritas Nativas</p><span class="price">S/ 22.00</span></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1527477396000-e27163b481c2?auto=format&fit=crop&w=500&q=80" alt="Alitas Acevichadas"><div class="menu-card-body"><h3>Alitas Acevichadas</h3><p>Papas Nativas Fritas</p><span class="price">S/ 22.00</span></div></article>
+      </div>
+
+      <div class="menu-grid" data-panel="salchipapas">
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1585109649139-366815a0d713?auto=format&fit=crop&w=500&q=80" alt="Salchipapa Clásica"><div class="menu-card-body"><h3>Salchipapa Clásica</h3><p>Papas nativas + Hot dog + Chorizo</p><span class="price">S/ 15.00</span></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1585109649139-366815a0d713?auto=format&fit=crop&w=500&q=80" alt="Salchipapa Montada"><div class="menu-card-body"><h3>Salchipapa Montada</h3><p>Papas nativas + Hot dog + Chorizo + Huevo</p><span class="price">S/ 18.00</span></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1585109649139-366815a0d713?auto=format&fit=crop&w=500&q=80" alt="Salchipapa Antojitos"><div class="menu-card-body"><h3>Salchipapa Antojitos</h3><p>Papas nativas + Hot dog + Chorizo + Huevo + Pollo a la parrilla</p><span class="price">S/ 23.00</span></div></article>
+      </div>
+
+      <div class="menu-grid" data-panel="hamburguesas">
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=500&q=80" alt="Hamburguesa Royal"><div class="menu-card-body"><h3>Hamburguesa Royal</h3><p>Queso + Huevo + Lechuga + Tomate + Papa frita</p><span class="price">S/ 15.00</span></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=500&q=80" alt="Hamburguesa Hawaiana BR"><div class="menu-card-body"><h3>Hamburguesa Hawaiana BR</h3><p>Piña + Jamón + Queso + Lechuga + Tomate + Papa frita</p><span class="price">S/ 18.00</span></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=500&q=80" alt="Hamburguesa Clásica"><div class="menu-card-body"><h3>Hamburguesa Clásica</h3><p>Queso + Lechuga + Tomate + Papa frita</p><span class="price">S/ 15.00</span></div></article>
+      </div>
+
+      <div class="menu-grid" data-panel="guarniciones">
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1518013431117-eb1465fa5752?auto=format&fit=crop&w=500&q=80" alt="Porción de Papas"><div class="menu-card-body"><h3>Porción de Papas</h3><p>&nbsp;</p><span class="price">S/ 6.00</span></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=500&q=80" alt="Porción de Chorizo"><div class="menu-card-body"><h3>Porción de Chorizo</h3><p>&nbsp;</p><span class="price">S/ 6.00</span></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1546793665-c74683f339c1?auto=format&fit=crop&w=500&q=80" alt="Porción de Ensalada"><div class="menu-card-body"><h3>Porción de Ensalada</h3><p>&nbsp;</p><span class="price">S/ 5.00</span></div></article>
+      </div>
+
+      <div class="menu-grid" data-panel="jarras">
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=500&q=80" alt="Jarra de Chicha"><div class="menu-card-body"><h3>Jarra de Chicha</h3><p>&nbsp;</p><span class="price">S/ 10.00</span></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=500&q=80" alt="Jarra de Limonada"><div class="menu-card-body"><h3>Jarra de Limonada</h3><p>&nbsp;</p><span class="price">S/ 10.00</span></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1497534446932-c925b458314e?auto=format&fit=crop&w=500&q=80" alt="Jarra de Maracuyá"><div class="menu-card-body"><h3>Jarra de Maracuyá</h3><p>&nbsp;</p><span class="price">S/ 10.00</span></div></article>
+      </div>
+
+      <div class="menu-grid" data-panel="gaseosas">
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=500&q=80" alt="Gaseosa de 3 litros"><div class="menu-card-body"><h3>Gaseosa de 3 litros</h3><p>&nbsp;</p><span class="price">S/ 13.00</span></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=500&q=80" alt="Gaseosa de 2½ litros"><div class="menu-card-body"><h3>Gaseosa de 2½ litros</h3><p>&nbsp;</p><span class="price">S/ 10.00</span></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=500&q=80" alt="Gaseosa de 1½ litros"><div class="menu-card-body"><h3>Gaseosa de 1½ litros</h3><p>&nbsp;</p><span class="price">S/ 8.50</span></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=500&q=80" alt="Gaseosa de 1 litro"><div class="menu-card-body"><h3>Gaseosa de 1 litro</h3><p>&nbsp;</p><span class="price">S/ 7.50</span></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=500&q=80" alt="Gaseosa Gordita"><div class="menu-card-body"><h3>Gaseosa Gordita</h3><p>&nbsp;</p><span class="price">S/ 4.00</span></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=500&q=80" alt="Gaseosa Personal"><div class="menu-card-body"><h3>Gaseosa Personal</h3><p>&nbsp;</p><span class="price">S/ 2.50</span></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=500&q=80" alt="Gaseosa Personal de 600 ml"><div class="menu-card-body"><h3>Gaseosa Personal de 600 ml</h3><p>&nbsp;</p><span class="price">S/ 3.00</span></div></article>
+      </div>
+
+      <div class="menu-grid" data-panel="calientes">
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=500&q=80" alt="Manzanilla"><div class="menu-card-body"><h3>Manzanilla</h3><p>&nbsp;</p><span class="price">S/ 2.50</span></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=500&q=80" alt="Anís"><div class="menu-card-body"><h3>Anís</h3><p>&nbsp;</p><span class="price">S/ 2.50</span></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=500&q=80" alt="Té"><div class="menu-card-body"><h3>Té</h3><p>&nbsp;</p><span class="price">S/ 2.50</span></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=500&q=80" alt="Café"><div class="menu-card-body"><h3>Café</h3><p>&nbsp;</p><span class="price">S/ 3.00</span></div></article>
+      </div>
+
+      <div class="menu-grid" data-panel="tragos">
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=500&q=80" alt="Daiquiri de Limón"><div class="menu-card-body"><h3>Daiquiri de Limón</h3><p>Daiquiris</p><span class="price">S/ 15.00</span></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=500&q=80" alt="Daiquiri de Maracuyá"><div class="menu-card-body"><h3>Daiquiri de Maracuyá</h3><p>Daiquiris</p><span class="price">S/ 15.00</span></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=500&q=80" alt="Daiquiri de Fresa"><div class="menu-card-body"><h3>Daiquiri de Fresa</h3><p>Daiquiris</p><span class="price">S/ 15.00</span></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=500&q=80" alt="Machupicchu"><div class="menu-card-body"><h3>Machupicchu</h3><p>&nbsp;</p><span class="price">S/ 18.00</span></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=500&q=80" alt="Mojitos"><div class="menu-card-body"><h3>Mojitos</h3><p>&nbsp;</p><span class="price">S/ 15.00</span></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=500&q=80" alt="Piña Colada"><div class="menu-card-body"><h3>Piña Colada</h3><p>&nbsp;</p><span class="price">S/ 18.00</span></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=500&q=80" alt="Pisco Sour"><div class="menu-card-body"><h3>Pisco Sour</h3><p>&nbsp;</p><span class="price">S/ 15.00</span></div></article>
+      </div>
+
+      <div class="menu-grid" data-panel="cervezas">
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=500&q=80" alt="Pilsen"><div class="menu-card-body"><h3>Pilsen</h3><p>&nbsp;</p><span class="price">S/ 10.00</span></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=500&q=80" alt="Cusqueña Negra"><div class="menu-card-body"><h3>Cusqueña Negra</h3><p>&nbsp;</p><span class="price">S/ 11.00</span></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=500&q=80" alt="Cusqueña Trigo"><div class="menu-card-body"><h3>Cusqueña Trigo</h3><p>&nbsp;</p><span class="price">S/ 11.00</span></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=500&q=80" alt="Arequipeña"><div class="menu-card-body"><h3>Arequipeña</h3><p>&nbsp;</p><span class="price">S/ 10.00</span></div></article>
+      </div>
+
+      <div class="menu-grid" data-panel="especiales">
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=500&q=80" alt="Copa de Sangría"><div class="menu-card-body"><h3>Copa de Sangría</h3><p>&nbsp;</p><span class="price">S/ 10.00</span></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=500&q=80" alt="Copa de Tinto Verano"><div class="menu-card-body"><h3>Copa de Tinto Verano</h3><p>&nbsp;</p><span class="price">S/ 10.00</span></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=500&q=80" alt="Jarra de Sangría"><div class="menu-card-body"><h3>Jarra de Sangría</h3><p>&nbsp;</p><span class="price">S/ 30.00</span></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=500&q=80" alt="Jarra de Tinto Verano"><div class="menu-card-body"><h3>Jarra de Tinto Verano</h3><p>&nbsp;</p><span class="price">S/ 30.00</span></div></article>
+      </div>
+
+      <div class="menu-grid" data-panel="vinos">
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=500&q=80" alt="Hacienda del Abuelo"><div class="menu-card-body"><h3>Hacienda del Abuelo</h3><p>&nbsp;</p><span class="price">S/ 30.00</span></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=500&q=80" alt="Señorío de Najar"><div class="menu-card-body"><h3>Señorío de Najar</h3><p>&nbsp;</p><span class="price">S/ 32.00</span></div></article>
+        <article class="menu-card"><img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=500&q=80" alt="Perfecto Amor"><div class="menu-card-body"><h3>Perfecto Amor</h3><p>&nbsp;</p><span class="price">S/ 26.00</span></div></article>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALERÍA ===== -->
+<section class="galeria" id="galeria">
+  <div class="wrap">
+    <div class="section-head center">
+      <p class="section-kicker">Galería</p>
+      <h2>Nuestros sabores</h2>
+    </div>
+
+    <div class="gallery-grid">
+      <!-- Reemplaza cada URL por: img/galeria-1.jpg, img/galeria-2.jpg, etc. -->
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=700&q=80" alt="Carne a la parrilla">
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1607330289024-1535c6b4e1c1?auto=format&fit=crop&w=700&q=80" alt="Anticuchos">
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=700&q=80" alt="Parrillada">
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=700&q=80" alt="Pollo a la brasa">
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80" alt="Hamburguesa">
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=700&q=80" alt="Brasas encendidas">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DELIVERY + LOGIN ===== -->
+<section class="delivery" id="delivery">
+  <div class="wrap delivery-inner">
+
+    <div class="delivery-steps">
+      <p class="section-kicker">Delivery</p>
+      <h2>Pide para delivery</h2>
+
+      <!-- AGREGAR AQUÍ: zona de cobertura y tiempo estimado de entrega -->
+
+      <ol>
+        <li>
+          <span class="step-num">1</span>
+          <div>
+            <h3>Inicia sesión</h3>
+            <p>Con tu cuenta guardamos tu dirección y tu pedido anterior.</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="step-num">2</span>
+          <div>
+            <h3>Arma tu pedido</h3>
+            <p>Elige de la carta y agrega tus bebidas favoritas.</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="step-num">3</span>
+          <div>
+            <h3>Confirma y espera el humo</h3>
+            <p>Te avisamos cuando el repartidor esté saliendo de la parrilla.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+    <div class="login-card" id="loginCard">
+
+      <div class="login-tabs">
+        <button class="login-tab is-active" data-form="signin">Ingresar</button>
+        <button class="login-tab" data-form="signup">Crear cuenta</button>
+      </div>
+
+      <form class="login-form is-active" id="signinForm" data-form="signin">
+
+        <label>Correo
+          <input type="email" placeholder="tucorreo@ejemplo.com" required>
+        </label>
+
+        <label>Contraseña
+          <input type="password" placeholder="••••••••" required>
+        </label>
+
+        <button type="submit" class="btn btn-ember btn-full">
+          Ingresar y pedir
+        </button>
+
+        <p class="form-note">
+          ¿Olvidaste tu contraseña? <a href="#">Recupérala aquí</a>
+        </p>
+
+      </form>
+
+      <form class="login-form" id="signupForm" data-form="signup">
+
+        <label>Nombre
+          <input type="text" placeholder="Tu nombre" required>
+        </label>
+
+        <label>Correo
+          <input type="email" placeholder="tucorreo@ejemplo.com" required>
+        </label>
+
+        <label>Dirección de entrega
+          <input type="text" placeholder="Calle, número, referencia" required>
+        </label>
+
+        <label>Contraseña
+          <input type="password" placeholder="Crea una contraseña" required>
+        </label>
+
+        <button type="submit" class="btn btn-ember btn-full">
+          Crear cuenta
+        </button>
+
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACTO ===== -->
+<section class="contacto" id="contacto">
+  <div class="wrap contacto-inner">
+
+    <div class="contacto-info">
+      <p class="section-kicker">Contacto</p>
+      <h2>Visítanos en La Joya</h2>
+
+      <p class="contacto-direccion">
+        📍 ANTOJITOS<br>
+        Cruce La Joya – Panamericana Sur<br>
+        Ex Grifo Gato<br>
+        La Joya, Arequipa, Perú
+      </p>
+
+      <!-- AGREGAR AQUÍ: horario de atención -->
+      <!-- NÚMERO DE WHATSAPP: 931451286 -->
+
+      <div class="contacto-actions">
+
+        <a
+          class="btn btn-ember"
+          href="https://www.google.com/maps/search/?api=1&query=Cruce+La+Joya+Panamericana+Sur+Arequipa"
+          target="_blank"
+          rel="noopener"
+        >
+          Cómo llegar
+        </a>
+
+        <!-- WHATSAPP -->
+        <a
+          class="btn btn-outline"
+          href="https://wa.me/51931451286?text=Hola%2C%20vi%20Parrillas%20Antojitos%20y%20quiero%20consultar"
+          id="whatsappBtn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          WhatsApp
+        </a>
+
+      </div>
+
+      <div class="contacto-social">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+      </div>
+    </div>
+
+    <div class="contacto-map">
+
+      <!--
+        Mapa insertado directamente desde Google Maps (pin exacto de
+        Antojitos parrillas). Si en algún momento cambias de local, repite
+        estos pasos en Google Maps: busca el lugar → Compartir → Insertar
+        un mapa → copia el nuevo src y reemplázalo aquí.
+      -->
+
+      <iframe
+        class="map-frame"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7651.310162293724!2d-71.85554350898816!3d-16.492993786998035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9143d3007a156311%3A0xbe0f78ab3b513185!2sAntojitos%20parrillas!5e0!3m2!1ses-419!2spe!4v1789417309084!5m2!1ses-419!2spe"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Ubicación de Antojitos en La Joya, Arequipa">
+      </iframe>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+
+    <div class="footer-brand">
+      <p class="logo">
+        Antojitos<span class="logo-dot">.</span>
+      </p>
+
+      <p>El sabor de la parrilla que nos reúne.</p>
+
+      <p class="footer-address">
+        Cruce La Joya – Panamericana Sur, ex Grifo Gato,<br>
+        La Joya, Arequipa, Perú
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Navegación</h4>
+
+      <p>
+        <a href="#inicio">Inicio</a><br>
+        <a href="#nosotros">Nosotros</a><br>
+        <a href="#carta">Carta</a><br>
+        <a href="#galeria">Galería</a><br>
+        <a href="#contacto">Contacto</a>
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Síguenos</h4>
+
+      <!-- AGREGAR AQUÍ: enlaces reales a redes sociales -->
+
+      <p>
+        <a href="#">Instagram</a><br>
+        <a href="#">Facebook</a>
+      </p>
+    </div>
+
+  </div>
+
+  <div class="wrap footer-bottom">
+    <p>© 2026 Antojitos. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<!-- ===== MODAL LOGIN RÁPIDO (desde el header) ===== -->
+<div class="modal-overlay" id="modalOverlay">
+
+  <div class="modal-box">
+
+    <button
+      class="modal-close"
+      id="modalClose"
+      aria-label="Cerrar"
+    >
+      ×
+    </button>
+
+    <h3>Ingresa a tu cuenta</h3>
+
+    <form id="modalForm">
+
+      <label>Correo
+        <input
+          type="email"
+          placeholder="tucorreo@ejemplo.com"
+          required
+        >
+      </label>
+
+      <label>Contraseña
+        <input
+          type="password"
+          placeholder="••••••••"
+          required
+        >
+      </label>
+
+      <button type="submit" class="btn btn-ember btn-full">
+        Ingresar
+      </button>
+
+    </form>
+
+  </div>
+</div>
+
+
+<!-- =========================================================
+     BOTÓN FLOTANTE DE WHATSAPP
+     Número: +51 931451286
+     ========================================================= -->
+
+<a
+  href="https://wa.me/51931451286?text=Hola%2C%20vi%20Parrillas%20Antojitos%20y%20quiero%20consultar"
+  class="whatsapp-float"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Contactar por WhatsApp"
+  title="Escríbenos por WhatsApp"
+>
+  <svg
+    class="whatsapp-icon"
+    viewBox="0 0 24 24"
+    aria-hidden="true"
+  >
+    <path
+      fill="currentColor"
+      d="M20.52 3.48A11.82 11.82 0 0 0 12.08 0C5.56 0 .25 5.31.25 11.83c0 2.08.54 4.11 1.57 5.9L.15 24l6.43-1.69a11.82 11.82 0 0 0 5.5 1.4h.01c6.52 0 11.82-5.31 11.82-11.83 0-3.16-1.23-6.13-3.39-8.4ZM12.09 21.7h-.01a9.83 9.83 0 0 1-5.01-1.37l-.36-.21-3.82 1 1.02-3.72-.23-.38a9.82 9.82 0 0 1-1.51-5.19C2.17 6.4 6.61 1.96 12.09 1.96c2.65 0 5.14 1.03 7.02 2.92a9.86 9.86 0 0 1 2.91 7.01c0 5.48-4.45 9.81-9.93 9.81Zm5.39-7.36c-.3-.15-1.77-.87-2.05-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.28-.47-2.44-1.51-.9-.8-1.51-1.79-1.69-2.09-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.05 1.02-1.05 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.21 5.09 4.5.71.31 1.26.49 1.69.63.71.23 1.35.2 1.86.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"
+    />
+  </svg>
+</a>
+
+
+<script src="script.js"></script>
+</body>
+</html>
